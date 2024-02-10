@@ -86,11 +86,18 @@ ul {
 
 /* end components */
 /* start header */
+header {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    min-height: 97px;
 }
 header .container::after {
     content: "";
@@ -110,8 +117,34 @@ header .container nav {
     align-items: center;
     justify-content: flex-end;
 }
+header .container nav .toggle-menu {
+    color: white;
+    font-size: 22px;
+}
+@media (min-width: 768px) {
+    header .container nav .toggle-menu {
+        display: none;
+    }
+}
 header .container nav ul {
     display: flex;
+}
+@media (max-width: 768px) {
+    header .container nav ul {
+        display: none;
+    }
+    header .container nav .toggle-menu:hover + ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgb(0 0 0 / 50%);
+    }
+    header .container nav ul li a {
+        padding: 15px !important;
+    }
 }
 header .container nav ul a {
     display: block;
