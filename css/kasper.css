@@ -19,7 +19,6 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: black;
 }
 
 ul {
@@ -59,30 +58,46 @@ ul {
 
 /* End Global Rules */
 /* start components */
-.special-heading {
-    font-size: 100px;
-    font-weight: 800;
+.main-heading {
+    padding: 100px;
     text-align: center;
-    color: #ebeced;
-    letter-spacing: -3px;
-    margin: 0;
 }
-
-.special-heading+p {
-    margin: -30px;
-    font-size: 20px;
-    text-align: center;
-    color: #797979;
+.section .main-heading h2 {
+    font-weight: normal;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 70px;
+    text-transform: uppercase;
 }
+.section .main-heading h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: #333;
+    bottom: -30px;
+    width: 120px;
 
-@media (max-width: 767px) {
-    .special-heading {
-        font-size: 60px;
-    }
-
-    .special-heading+p {
-        margin-top: -20px;
-    }
+}
+.section .main-heading h2::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -38px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    background-color: white;
+}
+.section .main-heading p {
+    width: 550px;
+    margin: 0 auto 100px;
+    max-width: 100%;
+    line-height: 2;
+    color: #777;
 }
 
 /* end components */
