@@ -441,6 +441,16 @@ header .container nav .form i {
 .portfolio .imgs-container .box .caption p {
     color: var(--mian-color);
 }
+.portfolio .MOre {
+    background-color: var(--mian-color);
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 /* End Portfolio */
 
 /* time video ====> 1:22:35 */
