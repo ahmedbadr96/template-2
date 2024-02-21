@@ -478,14 +478,30 @@ header .container nav .form i {
     color: white;
     text-align: center;
 }
-.video .text h2{
-    margin: 0 0 30px;
+@media (max-width: 767px) {
+    .video .text {
+        padding: 10px;
+    }
+    .video .text h2 {
+        font-size: 15px;
+        margin: 0 0 10px;
+    }
+    .video .text p {
+        margin-bottom: 10px;
+    }
+}
+@media (min-width: 767px) {
+    .video .text h2 {
+        margin: 0 0 30px;
+    }
+    .video .text p {
+        margin-bottom: 20px;
+    }
+}
+.video .text h2 {
     text-transform: uppercase;
+}
 
-}
-.video .text p{
-    margin-bottom: 20px;
-}
 .video .text button{
     background-color: black;
     color: white;
