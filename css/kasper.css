@@ -832,5 +832,85 @@ position: relative;
     text-decoration: none;
 } 
 /* End Pricing */
+/* Start subscribe */
+.subscribe {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-image: url(../images/space.jpg);
+    background-size: cover;
+    position: relative;
+}
+.subscribe::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 50%);
+}
+.subscribe .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+@media (max-width: 991px) {
+    .subscribe .container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+.subscribe .container form {
+    display: flex;
+    position: relative;
+    width: 600px;
+    max-width: 100%;
+}
+.subscribe .container form i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 23px;
+    font-size: 17px;
+}
+.subscribe .container form input[type="email"]{
+    border: 1px solid white;
+    background: none;
+    width: calc(100% - 100px);
+    height: 44px;
+    border-right: none;
+    padding: 20px 20px 20px 60px;
+    caret-color: var(--mian-color);
+    border-radius: 0;
+    color: white;
+}
+.subscribe .container form input[type="submit"]{
+    width: 100px;
+    background-color: var(--mian-color);
+    color: white;
+    border: 1px solid white;
+    border-left: none;
+    text-transform: uppercase;
+}
+.subscribe .container form input[type="email"]:focus,
+.subscribe .container form input[type="submit"]:focus {
+    outline: none;
+}
+.subscribe .container form ::placeholder {
+    color: white;
+    font-size: 17px;
+}
+.subscribe .container p {
+    line-height: 2;
+    margin-left: 50px;
+}
+@media (max-width: 991px) {
+    .subscribe .container p {
+        margin: 30px 0 0;
+        text-align: center;
+    }
+}
+/* End subscribe */
 
-/* time video ====> 2:35:32 */
+/* time video ====> 2:48:31 */
