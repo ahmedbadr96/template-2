@@ -990,5 +990,11 @@ position: relative;
     }
 }
 /* End contact */
+/* Start footer */
+.footer {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+/* End footer */
 
 /* time video ====> 3:04:18 */
